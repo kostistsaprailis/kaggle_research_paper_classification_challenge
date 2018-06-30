@@ -121,8 +121,8 @@ class NNClassifier(object):
         inputs = []
         inputs.append(text_input)
         inputs.append(authors_inputs)
+        inputs.append(x3)
         inputs.append(x4)
-        inputs.append(x5)
 
         self.model = Model(inputs, preds)
         self.model.compile(loss='categorical_crossentropy',
